@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "paths": {
+      "@praburangki/composables-shared": ["./packages/shared/index.ts"],
+      "@praburangki/composables-shared/*": ["./packages/shared/*"],
+      "@praburangki/composables-core": ["./packages/core/index.ts"],
+      "@praburangki/composables-core/*": ["./packages/core/*"],
+      "@praburangki/composables-docs-utils": ["./packages/.vitepress/utils.ts"]
+    }
+  },
+  "include": [
+    "packages"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/**/*.test.ts",
+    "**/**/*.stories.tsx",
+    "**/**/*.md",
+    "**/dist",
+    "packages/.test",
+    "packages/_docs"
+  ]
+}
