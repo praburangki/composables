@@ -22,7 +22,8 @@
       "@praburangki/composables-core": ["./packages/core/index.ts"],
       "@praburangki/composables-core/*": ["./packages/core/*"],
       "@praburangki/composables-docs-utils": ["./packages/.vitepress/utils.ts"]
-    }
+    },
+    "types": ["@praburangki/web-utilities"],
   },
   "include": [
     "packages"
